@@ -133,9 +133,9 @@ public class NewsFragment extends Fragment implements NewsManager.RequestListene
                         etContent.setText("");
                         ivImage.setImageResource(R.drawable.ic_image_white_160dp);
                         type=true;
-                    } else
+                    } else{
                         btnCreate.setEnabled(false);
-                        uploadImage();
+                        uploadImage();}
                 }
                 break;
             case R.id.ib_more_news:
