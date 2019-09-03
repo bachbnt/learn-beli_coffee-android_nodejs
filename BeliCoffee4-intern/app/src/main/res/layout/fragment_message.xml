@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.MessageFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:id="@+id/rl_topbar_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkCyan"
+        android:gravity="center_vertical"
+        android:padding="@dimen/mediumSpace">
+
+        <ImageButton
+            android:id="@+id/ib_back_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/mediumSpace"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_arrow_back_white_32dp" />
+
+        <TextView
+            android:id="@+id/tv_title_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/largeSpace"
+            android:layout_toRightOf="@+id/ib_back_message"
+            android:background="@android:color/transparent"
+            android:gravity="center_vertical"
+            android:text="Hỗ trợ"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/xlargeFontSize"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_audio_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/mediumSpace"
+            android:layout_toLeftOf="@+id/ib_video_message"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_phone_white_32dp" />
+
+        <ImageButton
+            android:id="@+id/ib_video_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/smallSpace"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_videocam_white_32dp" />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_message_message"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/ll_chatbox_message"
+        android:layout_below="@+id/rl_topbar_message"
+        android:background="@color/colorWhiteSmoke"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rv_message_message"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/ll_message_message"
+            android:layout_alignTop="@+id/ll_message_message"></android.support.v7.widget.RecyclerView>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/ll_chatbox_message"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite">
+
+        <EditText
+            android:id="@+id/et_input_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/largeSpace"
+            android:layout_toLeftOf="@+id/ib_send_message"
+            android:background="@drawable/bg_chat_edittext"
+            android:hint="Nhập nội dung tin nhắn"
+            android:maxHeight="100dp"
+            android:paddingLeft="@dimen/mediumSpace"
+            android:paddingTop="@dimen/smallSpace"
+            android:paddingBottom="@dimen/smallSpace"
+            android:textSize="@dimen/mediumFontSize" />
+
+        <ImageButton
+            android:id="@+id/ib_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/largeSpace"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_send_dark_cyan_32dp" />
+    </RelativeLayout>
+
+    <!-- TODO: Update blank fragment layout -->
+</RelativeLayout>

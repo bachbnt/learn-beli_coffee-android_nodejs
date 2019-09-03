@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_margin="@dimen/mediumSpace"
+    app:cardCornerRadius="@dimen/mediumSpace"
+    app:cardElevation="@dimen/smallSpace">
+
+    <LinearLayout
+        android:id="@+id/ll_drink"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/iv_image_drinkfood"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:background="@color/colorDarkCyan"
+            android:src="@drawable/ic_belicoffee" />
+
+        <TextView
+            android:id="@+id/tv_name_drinkfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:gravity="center"
+            android:text="Cà phê sữa"
+            android:textColor="@color/colorDarkCyan"
+            android:textSize="@dimen/xlargeFontSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_drinkfood"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginBottom="@dimen/mediumSpace"
+            android:gravity="center"
+            android:text="15.000 VNĐ"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/mediumFontSize" />
+    </LinearLayout>
+
+
+</android.support.v7.widget.CardView>

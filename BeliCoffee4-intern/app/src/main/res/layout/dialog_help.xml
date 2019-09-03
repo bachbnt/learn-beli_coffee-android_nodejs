@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/bg_receive_message_chat"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/xlargeSpace">
+
+    <TextView
+        android:id="@+id/tv_title_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Vui lòng đăng nhập để\nsử dụng chức năng này"
+        android:textColor="@color/colorDarkCyan"
+        android:textSize="@dimen/xlargeFontSize" />
+
+    <Button
+        android:id="@+id/btn_yes_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_dialog"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:background="@drawable/bg_signin_button_dark_cyan"
+        android:padding="@dimen/mediumSpace"
+        android:text="@string/sign_in"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <Button
+        android:id="@+id/btn_no_dialog"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_title_dialog"
+        android:layout_alignRight="@id/tv_title_dialog"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:background="@drawable/bg_signin_button_white"
+        android:padding="@dimen/mediumSpace"
+        android:text="Trở về"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkCyan" />
+</RelativeLayout>

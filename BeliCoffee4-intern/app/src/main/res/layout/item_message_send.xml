@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/smallSpace"
+    android:background="@android:color/transparent"
+    android:paddingLeft="100dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent">
+
+
+        <TextView
+            android:id="@+id/tv_name_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@id/ll_content_send_message"
+            android:layout_marginRight="@dimen/smallSpace"
+            android:layout_marginBottom="@dimen/smallSpace"
+            android:textColor="@color/colorDarkCyan"
+            android:textSize="@dimen/smallFontSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_content_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="@dimen/mediumSpace"
+            android:layout_marginRight="@dimen/mediumSpace"
+            android:background="@drawable/bg_send_message_chat"
+            android:layout_below="@id/tv_name_send_message"
+            android:layout_toLeftOf="@id/cv_avatar_send_message">
+
+            <TextView
+                android:id="@+id/tv_content_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity=""
+                android:text="xin chao"
+                android:textColor="@color/colorWhite"
+                android:textSize="@dimen/mediumFontSize" />
+
+            <TextView
+                android:id="@+id/tv_time_send_message"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_content_send_message"
+                android:layout_gravity="right"
+                android:layout_marginTop="@dimen/smallSpace"
+                android:text="10:30"
+                android:textColor="@color/colorGray"
+                android:textSize="@dimen/smallFontSize" />
+        </LinearLayout>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_avatar_send_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tv_name_send_message"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/mediumSpace"
+            app:cardCornerRadius="16dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar_send_message"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:src="@drawable/ic_belicoffee_small" />
+        </android.support.v7.widget.CardView>
+    </RelativeLayout>
+
+</LinearLayout>

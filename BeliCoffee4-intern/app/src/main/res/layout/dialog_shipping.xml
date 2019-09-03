@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_receive_message_chat"
+    android:padding="@dimen/largeSpace">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_image_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/largeSpace"
+        app:cardCornerRadius="15dp"
+        app:cardElevation="@dimen/smallSpace">
+
+        <ImageView
+            android:id="@+id/iv_image_dialog_shipping"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:src="@drawable/ic_belicoffee" />
+    </android.support.v7.widget.CardView>
+
+
+    <RelativeLayout
+        android:id="@+id/rl_select_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/cv_image_dialog_shipping">
+
+        <TextView
+            android:id="@+id/tv_name_dialog_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:text="Sữa tươi trân châu đường đen"
+            android:textColor="@color/colorDarkCyan"
+            android:textSize="@dimen/xlargeFontSize"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv_price_dialog_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_name_dialog_shipping"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/smallSpace"
+            android:text="15000"
+            android:textColor="@color/colorBlack"
+            android:textSize="@dimen/mediumFontSize" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_price_dialog_shipping"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/smallSpace">
+
+            <EditText
+                android:id="@+id/et_quantity_dialog_shipping"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/mediumSpace"
+                android:layout_marginRight="@dimen/mediumSpace"
+                android:hint="Số ly"
+                android:inputType="numberDecimal"
+                android:maxLength="3"
+                android:textSize="@dimen/largeFontSize" />
+
+            <ImageButton
+                android:id="@+id/ib_add_dialog_shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/et_quantity_dialog_shipping"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_add_circle_dark_cyan_32dp" />
+
+            <ImageButton
+                android:id="@+id/ib_sub_dialog_shipping"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/ib_add_dialog_shipping"
+                android:layout_toRightOf="@id/et_quantity_dialog_shipping"
+                android:background="@android:color/transparent"
+                android:src="@drawable/ic_remove_circle_dark_cyan_32dp" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+    <ImageButton
+        android:id="@+id/ib_more_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_select_dialog_shipping"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_expand_more_dark_cyan_48dp" />
+
+    <TextView
+        android:id="@+id/tv_total_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_select_dialog_shipping"
+        android:layout_alignRight="@id/rl_select_dialog_shipping"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:drawableLeft="@drawable/ic_attach_money_dark_cyan_32dp"
+        android:gravity="center"
+        android:padding="@dimen/smallSpace"
+        android:text="0 VNĐ"
+        android:textSize="@dimen/xlargeFontSize"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:id="@+id/ll_option_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_total_dialog_shipping"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/rg_one_dialog_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Ly lớn"
+                android:textSize="@dimen/smallFontSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallSpace"
+                android:text="Ly 2 trong 1"
+                android:textSize="@dimen/smallFontSize" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_two_dialog_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_one_dialog_shipping"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không đường"
+                android:textSize="@dimen/smallFontSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallSpace"
+                android:text="Đắng"
+                android:textSize="@dimen/smallFontSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallSpace"
+                android:text="Ngọt"
+                android:textSize="@dimen/smallFontSize" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/rg_three_dialog_shipping"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_two_dialog_shipping"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Không đá"
+                android:textSize="@dimen/smallFontSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallSpace"
+                android:text="Ít đá"
+                android:textSize="@dimen/smallFontSize" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/smallSpace"
+                android:text="Nhiều đá"
+                android:textSize="@dimen/smallFontSize" />
+        </RadioGroup>
+
+        <EditText
+            android:id="@+id/et_note_dialog_shipping"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rg_three_dialog_shipping"
+            android:hint="Ghi chú khác"
+            android:maxWidth="230dp"
+            android:maxHeight="60dp"
+            android:textSize="@dimen/mediumFontSize" />
+    </LinearLayout>
+
+
+    <Button
+        android:id="@+id/btn_order_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_option_dialog_shipping"
+        android:layout_alignLeft="@id/cv_image_dialog_shipping"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:layout_marginRight="@dimen/largeSpace"
+        android:layout_toLeftOf="@id/ib_basket_dialog_shipping"
+        android:background="@drawable/bg_signin_button_dark_cyan"
+        android:text="Đặt hàng"
+        android:textSize="@dimen/largeFontSize"
+        android:textAllCaps="false"
+        android:textColor="@color/colorWhite" />
+
+    <ImageButton
+        android:id="@+id/ib_basket_dialog_shipping"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_option_dialog_shipping"
+        android:layout_alignRight="@id/rl_select_dialog_shipping"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_shopping_basket_dark_cyan_48dp" />
+</RelativeLayout>

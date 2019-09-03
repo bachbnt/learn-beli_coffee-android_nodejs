@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_user_ver"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/smallSpace"
+    android:layout_marginRight="@dimen/smallSpace"
+    android:background="@color/colorWhite"
+    android:paddingLeft="@dimen/smallSpace"
+    android:paddingTop="@dimen/smallSpace"
+    android:paddingRight="@dimen/smallSpace">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_avatar_user_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/mediumSpace"
+        app:cardCornerRadius="27dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar_user_ver"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:background="@color/colorWhite"
+            android:src="@drawable/ic_belicoffee_small" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_username_user_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumSpace"
+        android:layout_toRightOf="@id/cv_avatar_user_ver"
+        android:gravity="center_vertical"
+        android:padding="@dimen/smallSpace"
+        android:text="Username"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkCyan"
+        android:textSize="@dimen/largeFontSize" />
+
+    <TextView
+        android:id="@+id/tv_message_user_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username_user_ver"
+        android:layout_marginLeft="@dimen/mediumSpace"
+        android:layout_marginBottom="@dimen/smallSpace"
+        android:layout_toRightOf="@id/cv_avatar_user_ver"
+        android:maxWidth="200dp"
+        android:maxHeight="25dp"
+        android:paddingLeft="@dimen/smallSpace"
+        android:text="Message"
+        android:textAllCaps="false"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/smallFontSize" />
+
+    <TextView
+        android:id="@+id/tv_time_user_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_username_user_ver"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/smallSpace"
+        android:layout_marginBottom="@dimen/mediumSpace"
+        android:text="10:30"
+        android:textColor="@color/colorGray"
+        android:textSize="@dimen/smallFontSize" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tv_message_user_ver"
+        android:layout_alignLeft="@id/tv_username_user_ver"
+        android:layout_alignRight="@id/tv_time_user_ver"
+        android:layout_marginTop="@dimen/mediumSpace"
+        android:layout_marginBottom="@dimen/smallSpace"
+        android:background="@color/colorGray" />
+</RelativeLayout>

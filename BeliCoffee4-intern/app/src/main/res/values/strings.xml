@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">Beli Coffee</string>
+    <string name="sign_in">Đăng Nhập</string>
+    <string name="sign_out">Đăng Xuất</string>
+    <string name="sign_up">Đăng Ký</string>
+    <string name="yourName">Tên Người dùng</string>
+    <string name="password">Mật khẩu</string>
+    <string name="email">Email</string>
+    <string name="phone_number">Số Điện thoại</string>
+    <string name="forgot_password">Quên Mật khẩu?</string>
+    <string name="get_password">Lấy lại Mật khẩu</string>
+    <string name="notifications">Thông báo</string>
+    <string name="cart">Giỏ hàng</string>
+    <string name="news">Tin tức</string>
+    <string name="shipping">Giao hàng</string>
+    <string name="promotion">Khuyến mãi</string>
+    <string name="shop">Cửa hàng</string>
+    <string name="account">Tài khoản</string>
+    <string name="home">Trang chủ</string>
+    <string name="list">Danh sách món</string>
+    <string name="favourite">Món yêu thích</string>
+    <string name="receipt">Quản lý đơn</string>
+    <string name="help">Hỗ trợ</string>
+    <string name="setting">Cài đặt</string>
+    <string name="otp">Mã xác thực OTP</string>
+    <string name="verify">Xác thực</string>
+    <string name="reply">Trả lời</string>
+    <string name="map_key">AIzaSyDtRlyHn8tpVgteiw09V8lrYddPa0etit8</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

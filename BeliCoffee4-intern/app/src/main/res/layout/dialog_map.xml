@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_send_message_chat"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Dialog.MapDialog">
+
+    <TextView
+        android:id="@+id/tv_name_dialog_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/mediumSpace"
+        android:gravity="center"
+        android:minWidth="70dp"
+        android:text="dsaddsd"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/largeFontSize" />
+
+    <LinearLayout
+        android:id="@+id/ll_chat_dialog_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:paddingLeft="@dimen/xlargeSpace"
+        android:paddingTop="@dimen/mediumSpace"
+        android:paddingRight="@dimen/xlargeSpace"
+        android:paddingBottom="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_chat_dark_cyan_32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_audio_dialog_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:paddingLeft="@dimen/xlargeSpace"
+        android:paddingTop="@dimen/mediumSpace"
+        android:paddingRight="@dimen/xlargeSpace"
+        android:paddingBottom="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_call_dark_cyan_32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_video_dialog_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:gravity="center"
+        android:paddingLeft="@dimen/xlargeSpace"
+        android:paddingTop="@dimen/mediumSpace"
+        android:paddingRight="@dimen/xlargeSpace"
+        android:paddingBottom="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_videocam_dark_cyan_32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_history_dialog_map"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_user"
+        android:gravity="center"
+        android:paddingLeft="@dimen/xlargeSpace"
+        android:paddingTop="@dimen/mediumSpace"
+        android:paddingRight="@dimen/xlargeSpace"
+        android:paddingBottom="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_history_dark_cyan_32dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_days_dialog_map"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_user"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <TextView
+            android:id="@+id/tv_3days_dialog_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mediumSpace"
+            android:text="3 ngày"
+            android:textColor="@color/colorDarkCyan" />
+
+        <TextView
+            android:id="@+id/tv_7days_dialog_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mediumSpace"
+            android:text="7 ngày"
+            android:textColor="@color/colorDarkCyan" />
+
+        <TextView
+            android:id="@+id/tv_30days_dialog_map"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/mediumSpace"
+            android:text="30 ngày"
+            android:textColor="@color/colorDarkCyan" />
+
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "742690526434",
+    "firebase_url": "https://belicoffee.firebaseio.com",
+    "project_id": "belicoffee",
+    "storage_bucket": "belicoffee.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:742690526434:android:003cf3ddc655cd68",
+        "android_client_info": {
+          "package_name": "com.belicoffee"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "742690526434-taiqom7pnmj80s3a1eevs8jg9i5g1jvg.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.belicoffee",
+            "certificate_hash": "580d886e9aac75552fc9331e4ed100aea1dacd22"
+          }
+        },
+        {
+          "client_id": "742690526434-a572h8rqeegin0du2rm1b18vh7hh49r7.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.belicoffee",
+            "certificate_hash": "33d15070b54fee06687d3459a734c17ec739e6b3"
+          }
+        },
+        {
+          "client_id": "742690526434-2hvckioacf2gndqo6mm9cdgatk9sdd04.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAKfyrxOlI5dDYnDjvjvbJiS0fA39whf9A"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "742690526434-2hvckioacf2gndqo6mm9cdgatk9sdd04.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteSmoke"
+    tools:context=".Fragment.MainFragment">
+
+
+    <RelativeLayout
+        android:id="@+id/rl_topbar_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorDarkCyan"
+        android:padding="@dimen/mediumSpace">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:drawableLeft="@drawable/ic_belicoffee_small"
+            android:drawablePadding="@dimen/mediumSpace"
+            android:gravity="center_vertical"
+            android:text="Beli Coffee"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/xlargeFontSize"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/ib_cart_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_shopping_cart_white_32dp" />
+
+        <ImageButton
+            android:id="@+id/ib_search_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toLeftOf="@id/ib_cart_main"
+            android:background="@android:color/transparent"
+            android:paddingRight="@dimen/largeSpace"
+            android:src="@drawable/ic_notifications_white_32dp" />
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_container_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/bottom_navigation_main"
+        android:layout_below="@id/rl_topbar_main">/></FrameLayout>
+
+
+    <android.support.design.widget.BottomNavigationView
+        android:id="@+id/bottom_navigation_main"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:itemBackground="@color/colorWhite"
+        app:itemIconTint="@color/colorDarkCyan"
+        app:itemTextColor="@color/colorDarkCyan"
+        app:menu="@menu/bottom_navigation_menu" />
+</RelativeLayout>

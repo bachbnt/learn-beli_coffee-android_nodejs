@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_send_message_chat"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    tools:context=".Dialog.UserDialog">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/smallSpace"
+        android:layout_marginBottom="@dimen/smallSpace"
+        android:text="Lựa chọn"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/largeFontSize" />
+
+    <LinearLayout
+        android:id="@+id/ll_audio_dialog_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:orientation="horizontal"
+        android:padding="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumSpace"
+            android:src="@drawable/ic_call_dark_cyan_32dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/largeSpace"
+            android:gravity="center_vertical"
+            android:text="AudioCall" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorGray" />
+
+    <LinearLayout
+        android:id="@+id/ll_video_dialog_user"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_dialog_user"
+        android:orientation="horizontal"
+        android:padding="@dimen/mediumSpace">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumSpace"
+            android:src="@drawable/ic_videocam_dark_cyan_32dp" />
+
+        <TextView
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="@dimen/largeSpace"
+            android:gravity="center_vertical"
+            android:text="VideoCall" />
+
+    </LinearLayout>
+</LinearLayout>

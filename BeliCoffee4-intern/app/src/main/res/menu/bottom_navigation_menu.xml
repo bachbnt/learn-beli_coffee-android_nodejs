@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_new"
+        android:enabled="true"
+        android:icon="@drawable/ic_fiber_new_dark_cyan_32dp"
+        android:title="@string/news"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_shipping"
+        android:enabled="true"
+        android:icon="@drawable/ic_local_shipping_dark_cyan_32dp"
+        android:title="@string/shipping"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_promotion"
+        android:enabled="true"
+        android:icon="@drawable/ic_card_giftcard_dark_cyan_32dp"
+        android:title="@string/promotion"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_shop"
+        android:enabled="true"
+        android:icon="@drawable/ic_store_dark_cyan_32dp"
+        android:title="@string/shop"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/action_account"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_dark_cyan_32dp"
+        android:title="@string/account"
+        app:showAsAction="ifRoom" />
+</menu>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorDarkCyan"
+    tools:context=".Fragment.ReceiveCallFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_avatar_receive_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xlargeSpace"
+        app:cardCornerRadius="80dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar_receive_call"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+
+            android:src="@drawable/ic_belicoffee" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_name_send_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_avatar_receive_call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xlargeSpace"
+        android:text="Beli Coffee"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="100dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/ib_decline_receive_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_call_button_red"
+            android:padding="@dimen/largeSpace"
+            android:src="@drawable/ic_call_end_white_32dp" />
+
+        <ImageButton
+            android:id="@+id/ib_accept_receive_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="100dp"
+            android:background="@drawable/bg_call_button_green"
+            android:padding="@dimen/largeSpace"
+            android:src="@drawable/ic_phone_white_32dp" />
+
+    </LinearLayout>
+</RelativeLayout>

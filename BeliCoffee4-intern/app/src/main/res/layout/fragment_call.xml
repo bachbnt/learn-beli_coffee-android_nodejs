@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Fragment.CallFragment">
+
+    <FrameLayout
+        android:id="@+id/fl_video_call"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorBlack">
+
+        <android.opengl.GLSurfaceView
+            android:id="@+id/glsv_video_call"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignStart="@+id/fl_video_call"
+            android:layout_alignTop="@+id/fl_video_call" />
+
+        <TextView
+            android:id="@+id/tv_name_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="200dp"
+            android:text="fdsfdsa"
+            android:textColor="@color/colorWhite"
+            android:textStyle="bold"
+            android:textSize="30sp" />
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_audio_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mediumSpace"
+            app:cardCornerRadius="80dp">
+
+            <ImageView
+                android:id="@+id/iv_audio_call"
+                android:layout_width="160dp"
+                android:layout_height="160dp" />
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/cv_avatar_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="@dimen/mediumSpace"
+            app:cardCornerRadius="50dp">
+
+            <ImageView
+                android:id="@+id/iv_avatar_call"
+                android:layout_width="100dp"
+                android:layout_height="100dp" />
+        </android.support.v7.widget.CardView>
+
+        <TextView
+            android:id="@+id/tv_title_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="60dp"
+            android:text="fdsfdsafsfdsffafdsf"
+            android:textColor="@color/colorWhite" />
+    </FrameLayout>
+
+
+    <ImageButton
+        android:id="@+id/ib_switch_camera_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="@dimen/xlargeSpace"
+        android:layout_marginRight="45dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_switch_camera_white_32dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:gravity="center">
+
+        <ImageButton
+            android:id="@+id/ib_speaker_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_call_button_blue"
+            android:padding="@dimen/mediumSpace"
+            android:src="@drawable/ic_volume_up_white_32dp" />
+
+        <ImageButton
+            android:id="@+id/ib_micro_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlargeSpace"
+            android:layout_toRightOf="@id/ib_speaker_call"
+            android:background="@drawable/bg_call_button_blue"
+            android:padding="@dimen/mediumSpace"
+            android:src="@drawable/ic_mic_white_32dp" />
+
+
+        <ImageButton
+            android:id="@+id/ib_camera_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlargeSpace"
+            android:layout_toRightOf="@id/ib_micro_call"
+            android:background="@drawable/bg_call_button_blue"
+            android:padding="@dimen/mediumSpace"
+            android:src="@drawable/ic_videocam_white_32dp" />
+
+        <ImageButton
+            android:id="@+id/ib_call_off_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/xlargeSpace"
+            android:layout_toRightOf="@id/ib_camera_call"
+            android:background="@drawable/bg_call_button_red"
+            android:padding="@dimen/mediumSpace"
+            android:src="@drawable/ic_call_end_white_32dp" />
+    </LinearLayout>
+</RelativeLayout>

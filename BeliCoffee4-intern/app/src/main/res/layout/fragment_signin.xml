@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkCyan"
+    tools:context=".Fragment.SignInFragment">
+
+    <ImageButton
+        android:id="@+id/ib_back_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumSpace"
+        android:layout_marginTop="@dimen/mediumSpace"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back_white_32dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xlargeSpace"
+        android:layout_marginBottom="@dimen/largeSpace"
+        android:background="@color/colorDarkCyan"
+        android:src="@drawable/ic_belicoffee" />
+
+    <LinearLayout
+        android:id="@+id/ll_input_signin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_email_signin"
+            style="@style/LoginEditText"
+            android:drawableLeft="@drawable/ic_mail_outline_dark_cyan_32dp"
+            android:hint="@string/email"
+            android:inputType="textEmailAddress" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="@dimen/mediumSpace"
+            app:hintEnabled="false"
+            app:passwordToggleEnabled="true"
+            app:passwordToggleTint="@color/colorDarkCyan">
+
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/et_password_signin"
+                style="@style/LoginEditText"
+                android:drawableStart="@drawable/ic_lock_outline_dark_cyan_32dp"
+                android:hint="@string/password"
+                android:inputType="textPassword" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot_signin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ll_input_signin"
+        android:layout_centerHorizontal="true"
+        android:clickable="true"
+        android:text="@string/forgot_password"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mediumFontSize" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorWhite"
+        android:padding="@dimen/mediumSpace">
+
+        <Button
+            android:id="@+id/btn_signin_signin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/largeSpace"
+            android:background="@drawable/bg_signin_button_white"
+            android:text="@string/sign_in"
+            android:textAllCaps="false"
+            android:textColor="@color/colorDarkCyan"
+            android:textSize="@dimen/largeFontSize" />
+
+        <TextView
+            android:id="@+id/tv_signup_signin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/btn_signin_signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/largeSpace"
+            android:layout_marginBottom="@dimen/largeSpace"
+            android:clickable="true"
+            android:text="@string/sign_up"
+            android:textSize="@dimen/mediumFontSize" />
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Fragment.NewsFragment">
+
+    <ImageButton
+        android:id="@+id/ib_more_news"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_expand_more_dark_cyan_48dp"
+        android:background="@android:color/transparent"/>
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_edit_news"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/mediumSpace"
+        android:layout_marginRight="@dimen/smallSpace"
+        android:layout_marginLeft="@dimen/smallSpace"
+        android:layout_marginBottom="@dimen/smallSpace">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorGray"
+            android:padding="@dimen/mediumSpace">
+
+            <EditText
+                android:id="@+id/et_title_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/iv_image_news"
+                android:hint="Title" />
+
+            <EditText
+                android:id="@+id/et_content_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_title_news"
+                android:layout_toLeftOf="@id/iv_image_news"
+                android:hint="Content" />
+
+            <ImageView
+                android:id="@+id/iv_image_news"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_alignParentRight="true"
+                android:layout_above="@id/btn_create_news"
+                android:src="@drawable/ic_image_white_160dp" />
+
+            <Button
+                android:id="@+id/btn_create_news"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/et_content_news"
+                android:layout_marginTop="@dimen/smallSpace"
+                android:background="@drawable/bg_signin_button_white"
+                android:text="Thêm mới"
+                android:textColor="@color/colorDarkCyan" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rv_news_news"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorWhiteSmoke"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

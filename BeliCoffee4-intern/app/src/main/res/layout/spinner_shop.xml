@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+android:layout_width="match_parent"
+android:layout_height="wrap_content"
+android:layout_gravity="center_horizontal"
+android:background="@color/colorWhite"
+android:drawableRight="@drawable/ic_keyboard_arrow_down_dark_cyan_32dp"
+android:drawablePadding="@dimen/mediumSpace"
+android:gravity="center_vertical"
+android:paddingLeft="@dimen/largeSpace"
+android:paddingTop="@dimen/smallSpace"
+android:paddingRight="@dimen/mediumSpace"
+android:paddingBottom="@dimen/smallSpace"
+android:textColor="@color/colorDarkCyan"
+android:textSize="@dimen/largeFontSize"
+android:textStyle="bold" />

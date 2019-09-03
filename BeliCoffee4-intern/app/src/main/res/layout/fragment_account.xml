@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorWhiteSmoke"
+    android:orientation="vertical"
+    tools:context=".Fragment.AccountFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:id="@+id/btn_signin_account"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/mediumSpace"
+            android:layout_marginTop="@dimen/xlargeSpace"
+            android:layout_marginBottom="@dimen/xlargeSpace"
+            android:background="@drawable/bg_signin_button_dark_cyan"
+            android:drawableLeft="@drawable/ic_account_circle_white_48dp"
+            android:drawablePadding="@dimen/mediumSpace"
+            android:paddingLeft="@dimen/mediumSpace"
+            android:paddingTop="@dimen/smallSpace"
+            android:paddingRight="@dimen/largeSpace"
+            android:paddingBottom="@dimen/smallSpace"
+            android:text="@string/sign_in"
+            android:textAlignment="viewStart"
+            android:textAllCaps="false"
+            android:textColor="@color/colorWhite"
+            android:textSize="@dimen/largeFontSize" />
+
+        <LinearLayout
+            android:id="@+id/ll_login_account"
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="@dimen/mediumSpace"
+            android:layout_marginBottom="@dimen/mediumSpace"
+            android:background="@color/colorWhite"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/xlargeSpace"
+                app:cardCornerRadius="40dp">
+
+                <ImageView
+                    android:id="@+id/iv_avatar_account"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/ic_belicoffee" />
+            </android.support.v7.widget.CardView>
+
+            <TextView
+                android:id="@+id/et_username_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/largeSpace"
+                android:text="My name"
+                android:textSize="@dimen/xlargeFontSize"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </FrameLayout>
+
+    <ListView
+        android:id="@+id/lv_option_account"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"></ListView>
+
+    <Button
+        android:id="@+id/btn_signout_account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/mediumSpace"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/bg_signin_button_white"
+        android:drawableLeft="@drawable/ic_exit_to_app_dark_cyan_32dp"
+        android:drawablePadding="@dimen/mediumSpace"
+        android:paddingLeft="@dimen/mediumSpace"
+        android:paddingTop="@dimen/mediumSpace"
+        android:paddingRight="@dimen/largeSpace"
+        android:paddingBottom="@dimen/mediumSpace"
+        android:text="@string/sign_out"
+        android:textAllCaps="false"
+        android:textColor="@color/colorDarkCyan"
+        android:textSize="@dimen/mediumFontSize" />
+
+</LinearLayout>

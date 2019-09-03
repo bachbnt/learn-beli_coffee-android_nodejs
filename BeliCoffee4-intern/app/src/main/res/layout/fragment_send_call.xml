@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkCyan"
+    tools:context=".Fragment.SendCallFragment">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cv_avatar_receive_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/xlargeSpace"
+        app:cardCornerRadius="80dp">
+
+        <ImageView
+            android:id="@+id/iv_avatar_receive_call"
+            android:layout_width="160dp"
+            android:layout_height="160dp"
+            android:src="@drawable/ic_belicoffee" />
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/tv_calling_send_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cv_avatar_receive_call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:text="Đang gọi..."
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/mediumFontSize" />
+
+    <TextView
+        android:id="@+id/tv_name_send_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_calling_send_call"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/largeSpace"
+        android:text="Beli Coffee"
+        android:textColor="@color/colorWhite"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+
+    <ImageButton
+        android:id="@+id/ib_decline_receive_call"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="80dp"
+        android:background="@drawable/bg_call_button_red"
+        android:padding="@dimen/largeSpace"
+        android:src="@drawable/ic_call_end_white_32dp" />
+
+</RelativeLayout>
